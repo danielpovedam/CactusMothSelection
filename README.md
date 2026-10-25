@@ -1,9 +1,6 @@
 # CactusMothSelection
-Scripts for paper: Contemporary ecological heterogeneity shapes candidate adaptive genomic variation across the native range of an invasive herbivore
 
-# CactusMothSelection
-
-Code associated with the population- and landscape-genomic analyses of the native-range *Cactoblastis cactorum* dataset presented in:
+Code associated with the selection analyses of the native-range *Cactoblastis cactorum* dataset presented in:
 
 **Contemporary ecological heterogeneity shapes candidate adaptive genomic variation across the native range of an invasive herbivore**
 
@@ -468,7 +465,6 @@ Principal software and R packages used in these analyses include:
 
 - BayPass v3.1
 - R
-- data.table
 - GenomicRanges
 - IRanges
 - topGO
@@ -476,33 +472,10 @@ Principal software and R packages used in these analyses include:
 - NCBI BLAST+ v2.15.0
 - InterProScan v5.73-104.0
 
-Additional package dependencies are specified within individual scripts where applicable.
+Additional package dependencies are specified within individual scripts.
 
 ---
 
-# Reproducibility notes
-
-The scripts were originally developed and executed on an HPC environment and therefore contain paths corresponding to the original analysis directory structure.
-
-Users reproducing the workflow should update project, reference-genome, annotation, and output paths as appropriate for their environment.
-
-The repository preserves the analytical decisions used for the final manuscript, including:
-
-- three independent BayPass runs;
-- representative seed 12345 for XtX and C2;
-- median BF across runs for GEA;
-- local-score analysis restricted to scaffolds >1 Mb;
-- `xi = 2` and `alpha = 0.01` for XtX and C2;
-- MAF >0.05 filtering;
-- BF >20 dB for GEA candidates;
-- ≤1-kb grouping of significant GEA SNPs;
-- POD99.9 neutral calibration;
-- geographically restricted C2 sensitivity analysis;
-- C2 peak-SNP allele-frequency follow-up;
-- final candidate-SNP VEP annotation;
-- GO enrichment using the BayPass-screened genomic background.
-
----
 
 # Citation
 
@@ -515,5 +488,4 @@ Full manuscript citation will be added following publication.
 # Contact
 
 Daniel Poveda-Martínez
-
-For questions concerning the analyses or repository, please open a GitHub issue.
+danielpovedam@gmail.com 
